@@ -96,9 +96,11 @@ body {
       background-size: cover; }
     #gNav #Navbar_bottom #bbc {
       text-align: center;
-      padding: .8rem 1rem;
+      padding: .6rem 0;
       line-height: 1;
       background: linear-gradient(to right, #970268, #3d1671); }
+      #gNav #Navbar_bottom #bbc img {
+        width: 4rem; }
 
 #conts {
   margin: 0 0 0 8.5rem; }
@@ -141,8 +143,10 @@ body {
 
   #gNav {
     position: relative; }
+    #gNav .navbar {
+      padding-bottom: 0; }
     #gNav .navbar-toggler {
-      margin: 0 0 0 1rem; }
+      margin: 0 0 0.5rem 1rem; }
     #gNav .card {
       width: 100% !important; }
     #gNav #Navbar_bottom {
@@ -161,8 +165,6 @@ body {
         margin-top: .7rem; }
         #gNav #Navbar_bottom #btnSNS a {
           margin: 0 0.5rem !important; }
-      #gNav #Navbar_bottom #bbc img {
-        width: 80px; }
 
   #conts {
     height: auto;

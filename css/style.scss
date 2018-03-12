@@ -137,9 +137,13 @@ body {
 		}
 		#bbc {
 			text-align: center;
-			padding: .8rem 1rem;
+			padding: .6rem 0;
 			line-height: 1;
 			background: linear-gradient(to right, rgba(151, 2, 104, 1), rgba(61, 22, 113, 1));
+			
+			img {
+				width: 4rem;
+			}
 		}
 	}
 }
@@ -188,8 +192,11 @@ body {
 		@extend %flex100;
 		position: relative;
 
+		.navbar {
+			padding-bottom: 0;
+		}
 		.navbar-toggler {
-			@include responsive(0 0 0 1rem);
+			@include responsive(0 0 .5rem 1rem);
 		}
 		.card {
 			width: 100%!important;
@@ -211,9 +218,6 @@ body {
 				a {
 					margin: 0 .5rem!important;
 				}
-			}
-			#bbc img {
-				width: 80px;
 			}
 		}
 	}
