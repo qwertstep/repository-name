@@ -72,7 +72,6 @@ body {
 				-webkit-filter: hue-rotate(0deg);
 				filter: hue-rotate(0deg);
 			}
-
 			100% {
 				-webkit-filter: hue-rotate(360deg);
 				filter: hue-rotate(360deg);
@@ -80,7 +79,6 @@ body {
 		}
 	}
 }
-
 #gNav {
 	position: fixed;
 	top: 0;
@@ -95,12 +93,11 @@ body {
 				outline: none;
 		}
 	}
-
 	#NavbarWrap {
 		z-index: 2;
 
 		.subscribe_btn {
-			@include subscribeBtn( .6,.6);
+			@include subscribeBtn( .6, .6);
 
 		}
 		.navbar-collapse.collapse.in, .open > .dropdown-menu {
@@ -146,7 +143,6 @@ body {
 		}
 	}
 }
-
 #conts {
 	@extend %full_screen;
 	margin: 0 0 0 8.5rem;
@@ -155,7 +151,7 @@ body {
 		@include bgImage(txt_ttl_h1, svg, contain);
 	}
 	.subscribe_btn {
-		@include subscribeBtn( .75,.9);
+		@include subscribeBtn( .75, .9);
 
 	}
 	a.col-md-3 {
@@ -169,7 +165,6 @@ body {
 			top: -2rem;
 		}
 	}
-	
 	@for $i from 1 through 3 {
 		a.col-md-3 {
 			&:nth-child(#{$i}) .card-title {
