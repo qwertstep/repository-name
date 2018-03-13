@@ -180,6 +180,23 @@ body {
     height: auto;
     margin: 0; } }
 @media (max-width: 991px) {
+  body {
+    background: none; }
+
+  body::before {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    -webkit-transform: translate3d(0, 0, -1px);
+    transform: translate3d(0, 0, -1px);
+    width: 100%;
+    height: 100vh;
+    background: url("../images/bg_conts_01.jpg") center no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover; }
+
   .row {
     margin-left: 0;
     margin-right: 0; }
