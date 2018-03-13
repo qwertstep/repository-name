@@ -42,7 +42,8 @@ body .gradient, #conts {
 body {
   background: url("../images/bg_conts_01.jpg") center no-repeat;
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  font-weight: 100; }
   body .gradient {
     position: fixed;
     background: linear-gradient(to left, rgba(166, 217, 0, 0.4) 0%, rgba(255, 68, 84, 0.4) 100%);

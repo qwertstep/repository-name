@@ -65,6 +65,7 @@
 body {
 	@include bgImage(bg_conts_01, jpg);
 	background-attachment: fixed;
+	font-weight: 100;
 	
 	.gradient {
 		@extend %full_screen;
