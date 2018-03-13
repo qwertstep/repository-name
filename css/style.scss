@@ -2,6 +2,16 @@
 @mixin responsive($margin: 1rem auto 0) {
 	margin: $margin;
 }
+%full_screen {
+	width: 100vw;
+	height: auto;
+	min-height: 100vh;
+}
+.dropdown-item.active, .dropdown-item:active {
+	color: #fff!important;
+    background-color: #28a745;
+}
+/* Designate font-families */
 @font-face {
 	font-family: "Sunnydino";
 	src: url("../fonts/Sunnydino.otf"), /* Modern Browsers */
@@ -12,9 +22,6 @@
 	src: url("../fonts/Cupcakia.otf"), /* Modern Browsers */
 		 url('../fonts/cupcakia-webfont.woff') format('woff'); /* Safari, Android, iOS */
 }
-.test{
-  font-family:testFont;
-}
 .sunnydino {
 	font-family:"Sunnydino";
 	letter-spacing: .1rem;
@@ -23,6 +30,7 @@
 	font-family:"Cupcakia";
 	letter-spacing: .1rem;
 }
+/* Designate font-sizes */
 @mixin fSize($fSize: 1, $Unit: rem) {
 	font-size: $fSize + $Unit;
 }
@@ -38,10 +46,7 @@
 .fSize2 {
 	@include fSize(2);
 }
-.dropdown-item.active, .dropdown-item:active {
-	color: #fff!important;
-    background-color: #28a745;
-}
+/* Designate subscribeBtn */
 @mixin subscribeBtn($pTop: 1, $pLeft: 1, $Unit: rem) {
 	padding: {
 		top: $pTop + $Unit;
@@ -53,15 +58,12 @@
 		letter-spacing: 2px;
 	}
 }
+/* Designate backgrounds */
 @mixin bgImage($imgName, $extension, $value: cover) {
 	background: url("../images/" + $imgName + "." + $extension) center no-repeat;
 	background-size: $value;
 }
-%full_screen {
-	width: 100vw;
-	height: auto;
-	min-height: 100vh;
-}
+/* Designate each styles */
 body {
 	@include bgImage(bg_conts_01, jpg);
 	background-attachment: fixed;
@@ -71,10 +73,6 @@ body {
 		@extend %full_screen;
 		position: fixed;
 		background: linear-gradient(to left, rgba(166,217,0,.4) 0%, rgba(255,68,84,.4) 100%);
-		//background: -webkit-gradient(linear, left top, right bottom, from(red), color-stop(0.2, orange), color-stop(0.3, yellow), color-stop(0.5, green), color-stop(0.7, blue), color-stop(0.8, indigo), to(violet));
-		//background: linear-gradient(-45deg, rgba(246, 255, 0, 0.1), rgba(255, 0, 161, 0.1));
-		//background: -webkit-linear-gradient(to right, rgba(255,0,128,0.2), rgba(255,140,0,0.2), rgba(64,224,208,0.2));  /* Chrome 10-25, Safari 5.1-6 */
-		//background: linear-gradient(to right, rgba(255,0,128,0.2), rgba(255,140,0,0.2), rgba(64,224,208,0.2)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 		animation: huerotator 20s ease-in-out infinite alternate;
 
 		@keyframes huerotator {
@@ -190,7 +188,11 @@ body {
 			}
 		}
 	}
+	footer p {
+	    padding: 1.25rem;
+	}
 }
+/*  CSS Media Query: On screens that are 1199px or less */
 @media (max-width: 1199px) {
 
 	%flex100 {
@@ -239,8 +241,9 @@ body {
 		margin: 0;
 	}
 }
+/* CSS Media Query: On screens that are 991px or less */
 @media (max-width: 991px) {
-	body{
+	body {
 	    background: none;
   	}
 	body::before {

@@ -1,4 +1,14 @@
 /* Scss Document */
+body .gradient, #conts {
+  width: 100vw;
+  height: auto;
+  min-height: 100vh; }
+
+.dropdown-item.active, .dropdown-item:active {
+  color: #fff !important;
+  background-color: #28a745; }
+
+/* Designate font-families */
 @font-face {
   font-family: "Sunnydino";
   src: url("../fonts/Sunnydino.otf"), url("../fonts/sunnydino-webfont.woff") format("woff");
@@ -7,9 +17,6 @@
   font-family: "Cupcakia";
   src: url("../fonts/Cupcakia.otf"), url("../fonts/cupcakia-webfont.woff") format("woff");
   /* Safari, Android, iOS */ }
-.test {
-  font-family: testFont; }
-
 .sunnydino {
   font-family: "Sunnydino";
   letter-spacing: .1rem; }
@@ -18,6 +25,7 @@
   font-family: "Cupcakia";
   letter-spacing: .1rem; }
 
+/* Designate font-sizes */
 .fSize_8 {
   font-size: 0.8rem; }
 
@@ -30,15 +38,9 @@
 .fSize2 {
   font-size: 2rem; }
 
-.dropdown-item.active, .dropdown-item:active {
-  color: #fff !important;
-  background-color: #28a745; }
-
-body .gradient, #conts {
-  width: 100vw;
-  height: auto;
-  min-height: 100vh; }
-
+/* Designate subscribeBtn */
+/* Designate backgrounds */
+/* Designate each styles */
 body {
   background: url("../images/bg_conts_01.jpg") center no-repeat;
   background-size: cover;
@@ -143,7 +145,10 @@ body {
     background: url("../images/bg_ttl_03.png") center no-repeat;
     background-size: cover;
     padding: .6rem .5rem .3rem .6rem; }
+  #conts footer p {
+    padding: 1.25rem; }
 
+/*  CSS Media Query: On screens that are 1199px or less */
 @media (max-width: 1199px) {
   #gNav, #gNav #Navbar_bottom, #conts {
     -webkit-box-flex: 0;
@@ -180,6 +185,7 @@ body {
   #conts {
     height: auto;
     margin: 0; } }
+/* CSS Media Query: On screens that are 991px or less */
 @media (max-width: 991px) {
   body {
     background: none; }
