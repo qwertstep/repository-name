@@ -181,8 +181,8 @@ body {
     margin: 0; } }
 @media (max-width: 991px) {
   .row {
-    padding-left: 0;
-    padding-right: 0; }
+    margin-left: 0;
+    margin-right: 0; }
     .row .container {
       padding-left: 0;
       padding-right: 0; }
