@@ -1,13 +1,11 @@
 /* Scss Document */
 @font-face {
   font-family: "Sunnydino";
-  src: url("../fonts/Sunnydino.otf"), url("../fonts/sunnydino-webfont.woff2") format("woff2"), url("../fonts/sunnydino-webfont.woff") format("woff"); }
+  src: url("../fonts/Sunnydino.otf"), url("../fonts/sunnydino-webfont.woff") format("woff");
+  /* Safari, Android, iOS */ }
 @font-face {
   font-family: "Cupcakia";
-  src: url("../fonts/cupcakia-webfont.woff2") format("woff2"), url("../fonts/cupcakia-webfont.woff") format("woff"), url("../fonts/Cupcakia.otf"); }
-@font-face {
-  font-family: 'testFont';
-  src: url("FontFileName.woff") format("woff"), url("FontFileName.TTF") format("truetype");
+  src: url("../fonts/Cupcakia.otf"), url("../fonts/cupcakia-webfont.woff") format("woff");
   /* Safari, Android, iOS */ }
 .test {
   font-family: testFont; }
@@ -182,6 +180,10 @@ body {
     height: auto;
     margin: 0; } }
 @media (max-width: 991px) {
+  .container {
+    padding-left: 0;
+    padding-right: 0; }
+
   a.col-md-3 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 100%;
