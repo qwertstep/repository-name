@@ -1,0 +1,18 @@
+/* Scss Document */
+@mixin bgImage($imgName, $extension, $value: cover) {
+	background: url("../images/" + $imgName + "." + $extension) center no-repeat;
+	background-size: $value;
+}
+body {
+	@include bgImage(bg_conts_01, jpg);
+	
+	.gradient {
+		background: none;
+	}
+}
+#conts {
+	
+	h1 {
+		background: none;
+	}
+}

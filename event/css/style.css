@@ -1,0 +1,9 @@
+/* Scss Document */
+body {
+  background: url("../images/bg_conts_01.jpg") center no-repeat;
+  background-size: cover; }
+  body .gradient {
+    background: none; }
+
+#conts h1 {
+  background: none; }

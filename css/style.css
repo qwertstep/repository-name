@@ -1,7 +1,17 @@
 /* Scss Document */
 @font-face {
-  font-family: "Sunnydino","Cupcakia";
-  src: url("../fonts/Sunnydino.otf", "../fonts/Cupcakia.otf"); }
+  font-family: "Sunnydino";
+  src: url("../fonts/Sunnydino.otf"), url("../fonts/sunnydino-webfont.woff2") format("woff2"), url("../fonts/sunnydino-webfont.woff") format("woff"); }
+@font-face {
+  font-family: "Cupcakia";
+  src: url("../fonts/cupcakia-webfont.woff2") format("woff2"), url("../fonts/cupcakia-webfont.woff") format("woff"), url("../fonts/Cupcakia.otf"); }
+@font-face {
+  font-family: 'testFont';
+  src: url("FontFileName.woff") format("woff"), url("FontFileName.TTF") format("truetype");
+  /* Safari, Android, iOS */ }
+.test {
+  font-family: testFont; }
+
 .sunnydino {
   font-family: "Sunnydino";
   letter-spacing: .1rem; }
@@ -22,14 +32,14 @@
 .fSize2 {
   font-size: 2rem; }
 
+.dropdown-item.active, .dropdown-item:active {
+  color: #fff !important;
+  background-color: #28a745; }
+
 body .gradient, #conts {
   width: 100vw;
   height: auto;
   min-height: 100vh; }
-
-.dropdown-item.active, .dropdown-item:active {
-  color: #fff !important;
-  background-color: #28a745; }
 
 body {
   background: url("../images/bg_conts_01.jpg") center no-repeat;
@@ -57,6 +67,8 @@ body {
     margin: 1rem auto 0; }
     #gNav .navbar-toggler:focus {
       outline: none; }
+  #gNav .card {
+    width: 18rem; }
   #gNav #NavbarWrap {
     z-index: 2; }
     #gNav #NavbarWrap .subscribe_btn {

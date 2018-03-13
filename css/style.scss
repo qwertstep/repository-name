@@ -3,8 +3,24 @@
 	margin: $margin;
 }
 @font-face {
-	font-family: "Sunnydino","Cupcakia";
-	src: url("../fonts/Sunnydino.otf","../fonts/Cupcakia.otf");
+	font-family: "Sunnydino";
+	src: url("../fonts/Sunnydino.otf"),
+	 	 url('../fonts/sunnydino-webfont.woff2') format('woff2'),
+         url('../fonts/sunnydino-webfont.woff') format('woff');
+}
+@font-face {
+	font-family: "Cupcakia";
+	src: url('../fonts/cupcakia-webfont.woff2') format('woff2'),
+		 url('../fonts/cupcakia-webfont.woff') format('woff'),
+		 url("../fonts/Cupcakia.otf");
+}
+@font-face{
+    font-family:'testFont';
+    src:url('FontFileName.woff') format('woff'), /* Modern Browsers */
+    url('FontFileName.TTF')  format('truetype'); /* Safari, Android, iOS */
+}
+.test{
+  font-family:testFont;
 }
 .sunnydino {
 	font-family:"Sunnydino";
@@ -29,6 +45,10 @@
 .fSize2 {
 	@include fSize(2);
 }
+.dropdown-item.active, .dropdown-item:active {
+	color: #fff!important;
+    background-color: #28a745;
+}
 @mixin subscribeBtn($pTop: 1, $pLeft: 1, $Unit: rem) {
 	padding: {
 		top: $pTop + $Unit;
@@ -48,10 +68,6 @@
 	width: 100vw;
 	height: auto;
 	min-height: 100vh;
-}
-.dropdown-item.active, .dropdown-item:active {
-	color: #fff!important;
-    background-color: #28a745;
 }
 body {
 	@include bgImage(bg_conts_01, jpg);
@@ -93,6 +109,9 @@ body {
 				outline: none;
 		}
 	}
+	.card {
+			width: 18rem;
+		}
 	#NavbarWrap {
 		z-index: 2;
 
@@ -178,7 +197,6 @@ body {
 		}
 	}
 }
-
 @media (max-width: 1199px) {
 
 	%flex100 {
@@ -227,7 +245,6 @@ body {
 		margin: 0;
 	}
 }
-
 @media (max-width: 991px) {
 	a.col-md-3 {
 		-webkit-box-flex: 0;
