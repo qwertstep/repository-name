@@ -1,9 +1,13 @@
 /* Scss Document */
 body {
   background: url("../images/bg_conts_01.jpg") center no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
   body .gradient {
-    background: none; }
+    background: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.3) 100%); }
 
-#conts h1 {
-  background: none; }
+#conts .container_bg_alpha {
+  background-color: rgba(80, 218, 219, 0.5) !important;
+  width: 100vw; }
+  #conts .container_bg_alpha h1 {
+    background: none; }

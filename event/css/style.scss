@@ -5,14 +5,20 @@
 }
 body {
 	@include bgImage(bg_conts_01, jpg);
+	background-attachment: fixed;
 	
 	.gradient {
-		background: none;
+		background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .3) 50%, rgba(0, 0, 0, .3) 100%);
 	}
 }
 #conts {
 	
-	h1 {
-		background: none;
+	.container_bg_alpha {
+		background-color: rgba(80, 218, 219, 0.5)!important;
+		width: 100vw;
+		
+		h1 {
+			background: none;
+		}
 	}
 }
