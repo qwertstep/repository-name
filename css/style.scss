@@ -98,7 +98,7 @@ body {
 	.navbar-toggler {
 		@include responsive;
 		&:focus {
-				outline: none;
+			outline: none;
 		}
 	}
 	.card {
@@ -115,9 +115,9 @@ body {
 			display: inline-block;
 		}
 		h5 span {
-				padding-top: .3rem;
-				font-size: .5rem;
-				vertical-align: middle;
+			padding-top: .3rem;
+			font-size: .5rem;
+			vertical-align: middle;
 		}
 		.list-group-item a {
 			padding: .75rem 1.25rem;
@@ -160,10 +160,10 @@ body {
 }
 #conts {
 	@extend %full_screen;
-	margin: 0 0 0 8.5rem;
+	margin: 0 0 0 7.3rem;
 	
 	h1 {
-		@include bgImage(txt_ttl_h1, svg, contain);
+		@include bgImage(logo_ttl_01, svg, contain);
 	}
 	.subscribe_btn {
 		@include subscribeBtn( .75, .9);
@@ -210,7 +210,7 @@ body {
 			padding-bottom: 0;
 		}
 		.navbar-toggler {
-			@include responsive(0 0 .5rem .2rem);
+			@include responsive(0 0 .5rem 1.2rem);
 		}
 		.card {
 			width: 100%!important;
@@ -259,27 +259,33 @@ body {
 		@include bgImage(bg_conts_01, jpg);
 		-webkit-background-size: cover; /* Android4 */
 	}
-	.row {
-		margin: {
-				left: 0;
-				right: 0;
-		}
-		.container {
-			padding: {
+	#conts {
+		.row {
+			margin: {
 				left: 0;
 				right: 0;
 			}
-		}
-		a.col-md-3 {
-			-webkit-box-flex: 0;
-			-ms-flex: 0 0 100%;
-			flex: 0 0 100%;
-			max-width: 100%;
-			min-height: 0;
-			padding: {
-				left: 0;
-				right: 0;
+			.container {
+				padding: {
+					left: 0;
+					right: 0;
+				}
 			}
+			a.col-md-3 {
+				-webkit-box-flex: 0;
+				-ms-flex: 0 0 100%;
+				flex: 0 0 100%;
+				max-width: 100%;
+				min-height: 0;
+				padding: {
+					left: 0;
+					right: 0;
+				}
+			}
+		}
+		footer p {
+			padding: 1rem 3rem 0!important;
 		}
 	}
+	
 }

@@ -116,9 +116,9 @@ body {
         width: 4rem; }
 
 #conts {
-  margin: 0 0 0 8.5rem; }
+  margin: 0 0 0 7.3rem; }
   #conts h1 {
-    background: url("../images/txt_ttl_h1.svg") center no-repeat;
+    background: url("../images/logo_ttl_01.svg") center no-repeat;
     background-size: contain; }
   #conts .subscribe_btn {
     padding-top: 0.75rem;
@@ -162,7 +162,7 @@ body {
     #gNav .navbar {
       padding-bottom: 0; }
     #gNav .navbar-toggler {
-      margin: 0 0 0.5rem 0.2rem; }
+      margin: 0 0 0.5rem 1.2rem; }
     #gNav .card {
       width: 100% !important; }
     #gNav #Navbar_bottom {
@@ -205,17 +205,19 @@ body {
     -webkit-background-size: cover;
     /* Android4 */ }
 
-  .row {
+  #conts .row {
     margin-left: 0;
     margin-right: 0; }
-    .row .container {
+    #conts .row .container {
       padding-left: 0;
       padding-right: 0; }
-    .row a.col-md-3 {
+    #conts .row a.col-md-3 {
       -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
       flex: 0 0 100%;
       max-width: 100%;
       min-height: 0;
       padding-left: 0;
-      padding-right: 0; } }
+      padding-right: 0; }
+  #conts footer p {
+    padding: 1rem 3rem 0 !important; } }
