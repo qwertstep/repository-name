@@ -1,5 +1,5 @@
 /* Scss Document */
-/* For Event Page */
+/* Lower Page CSS */
 @mixin bgImage($imgName, $extension, $value: cover) {
 	background: url("../images/" + $imgName + "." + $extension) center no-repeat;
 	background-size: $value;
