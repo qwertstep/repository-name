@@ -11,16 +11,8 @@
 body {
 	@include bgImage(bg_conts_01, jpg);
 	background-attachment: fixed;
-	
-	.gradient {
-		background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .3) 50%, rgba(0, 0, 0, .3) 100%);
-	}
 }
 #conts {
-	
-	h1 {
-		background: none;
-	}
 	.container_bg_alpha {
 		@include bgColor(rgba(80, 218, 219, 0.5));
 		
@@ -28,51 +20,13 @@ body {
 			@include bgImage(logo_ttl_02, svg, contain);
 		}
 	}
-	.container_bg {
-		@include bgColor;
-		padding: {
-			top: 5rem;
-			bottom: 2rem;
-		}
-	}
-	.content_width {
-		width: 55vw;
-	}
-	.img-fluid {
-	   border-radius: .25rem;
-	}
 }
 /* CSS Media Query: On screens that are 991px or less */
 @media (max-width: 991px) {
+	
 	body::before {
 		@include bgImage(bg_conts_01, jpg);
 	}	
-	#conts {
-		
-		.container {
-			padding: 0;
-			
-			.content_width {
-				width: 100%;
-				padding: {
-					top: 0;
-					bottom: 0;
-				}
-			}
-			h3, p, .table_wrap, footer {
-				margin: 0 2rem;
-			}
-		}
-		.container_bg {
-			padding: {
-				top: 0;
-				bottom: 2rem;
-			}
-		}
-		.img-fluid {
-		   border-radius: 0;
-		}
-	}
 }
 
 

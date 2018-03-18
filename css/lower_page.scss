@@ -1,17 +1,10 @@
 /* Scss Document */
 /* Lower Page CSS */
-@mixin bgImage($imgName, $extension, $value: cover) {
-	background: url("../images/" + $imgName + "." + $extension) center no-repeat;
-	background-size: $value;
-}
 @mixin bgColor($rgba: rgba(255, 255, 255, 1)) {
 	background-color: $rgba!important;
 	max-width: 100vw;
 }
 body {
-	@include bgImage(bg_conts_01, jpg);
-	background-attachment: fixed;
-	
 	.gradient {
 		background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .3) 50%, rgba(0, 0, 0, .3) 100%);
 	}
@@ -20,13 +13,6 @@ body {
 	
 	h1 {
 		background: none;
-	}
-	.container_bg_alpha {
-		@include bgColor(rgba(80, 218, 219, 0.5));
-		
-		h2 {
-			@include bgImage(logo_ttl_02, svg, contain);
-		}
 	}
 	.container_bg {
 		@include bgColor;
@@ -44,9 +30,6 @@ body {
 }
 /* CSS Media Query: On screens that are 991px or less */
 @media (max-width: 991px) {
-	body::before {
-		@include bgImage(bg_conts_01, jpg);
-	}	
 	#conts {
 		
 		.container {
