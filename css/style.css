@@ -145,8 +145,6 @@ body {
     background: url("../images/bg_ttl_03.png") center no-repeat;
     background-size: cover;
     padding: .6rem .5rem .3rem .6rem; }
-  #conts footer p {
-    padding: 1.25rem; }
 
 /*  CSS Media Query: On screens that are 1199px or less */
 @media (max-width: 1199px) {
@@ -218,6 +216,4 @@ body {
       max-width: 100%;
       min-height: 0;
       padding-left: 0;
-      padding-right: 0; }
-  #conts footer p {
-    padding: 1rem 3rem 0 !important; } }
+      padding-right: 0; } }
