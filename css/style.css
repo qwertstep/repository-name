@@ -30,7 +30,7 @@ body .gradient, #conts {
   font-family: "Cupcakia";
   letter-spacing: .1rem; }
 
-/* big images on hover */
+/* Effect when mouse over */
 .imgWrap {
   display: block;
   overflow: hidden;
@@ -91,6 +91,9 @@ body {
   100% {
     -webkit-filter: hue-rotate(360deg);
     filter: hue-rotate(360deg); } }
+    body .gradient > row {
+      margin: 0; }
+
 #gNav {
   position: fixed;
   top: 0;
