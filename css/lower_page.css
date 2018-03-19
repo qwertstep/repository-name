@@ -30,14 +30,14 @@ body .gradient {
     padding-bottom: 2rem; }
   #conts .img-fluid {
     border-radius: 0; } }
-.ol_big ol {
+ol.ol_big {
   counter-reset: li;
   list-style: none; }
-  .ol_big ol li {
+  ol.ol_big li {
     position: relative;
     margin-bottom: 2rem;
     padding: 0 1rem; }
-  .ol_big ol li:before {
+  ol.ol_big li:before {
     counter-increment: li;
     content: counter(li);
     position: absolute;
