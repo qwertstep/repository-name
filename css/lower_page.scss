@@ -57,25 +57,27 @@ body {
 		}
 	}
 }
-ol {
-    counter-reset: li;
-    list-style: none;
+.ol_big {
+	ol {
+		counter-reset: li;
+		list-style: none;
+		
+		li {
+			position: relative;
+			margin-bottom: 2rem;
+			padding: 0 1rem;
+		}
+		li:before {
+			counter-increment: li;
+			content: counter(li);
+			position: absolute;
+			font-size: 2rem;
+			font-weight: bold;
+			top: -0.5rem;
+			left: -2rem;
+			width: 1.6em;
+			text-align: center;
+		}
+	}
 }
-ol li {
-	position: relative;
-    margin-bottom: 2rem;
-    padding: 0 1rem;
-}
-ol li:before {
-    counter-increment: li;
-    content: counter(li);
-    position: absolute;
-    font-size: 2rem;
-    font-weight: bold;
-    top: -0.5rem;
-    left: -2rem;
-    width: 1.6em;
-    text-align: center;
-}
-
 

@@ -30,22 +30,20 @@ body .gradient {
     padding-bottom: 2rem; }
   #conts .img-fluid {
     border-radius: 0; } }
-ol {
+.ol_big ol {
   counter-reset: li;
   list-style: none; }
-
-ol li {
-  position: relative;
-  margin-bottom: 2rem;
-  padding: 0 1rem; }
-
-ol li:before {
-  counter-increment: li;
-  content: counter(li);
-  position: absolute;
-  font-size: 2rem;
-  font-weight: bold;
-  top: -0.5rem;
-  left: -2rem;
-  width: 1.6em;
-  text-align: center; }
+  .ol_big ol li {
+    position: relative;
+    margin-bottom: 2rem;
+    padding: 0 1rem; }
+  .ol_big ol li:before {
+    counter-increment: li;
+    content: counter(li);
+    position: absolute;
+    font-size: 2rem;
+    font-weight: bold;
+    top: -0.5rem;
+    left: -2rem;
+    width: 1.6em;
+    text-align: center; }
