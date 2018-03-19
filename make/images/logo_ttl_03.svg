@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="828 627.663 400 150.669">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        font-size: 131px;
+        font-family: Cupcakia;
+      }
+
+      .cls-4 {
+        font-size: 42px;
+        font-family: Sunnydino;
+        letter-spacing: 0.02em;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_5" data-name="Rectangle 5" width="400" height="150.669"/>
+    </clipPath>
+  </defs>
+  <g id="Group_4" data-name="Group 4" transform="translate(-565 20.756)">
+    <g id="Group_3" data-name="Group 3" transform="translate(1393 606.906)">
+      <g id="Group_1" data-name="Group 1" class="cls-1" transform="translate(0 0)">
+        <text id="easycook" class="cls-2" transform="translate(0 109.859)"><tspan x="0" y="0">easycook</tspan></text>
+      </g>
+      <g id="Group_2" data-name="Group 2" class="cls-1" transform="translate(0 0)">
+        <path id="Path_39" data-name="Path 39" class="cls-3" d="M528.352,242.515c-.685,4.668-6.738,5.259-8.851,4.786s-5.71-1.891-5.653-3.781c.057-1.95,3.369-3.486,4.854-3.722,1.428-.236,2.8,1.536,3.141,2.245s1.827,1.3,1.941.118a3.562,3.562,0,0,0-1.142-2.777c-.8-1.064-3.026-1-2.512-1.536l3.6-5.14c.057,0,5.539,3.6,4.625,9.808m-3.826-11.758c.514-.768.286-4.018.286-4.018a11.036,11.036,0,0,0,1.884,1.477c1.485,1.064,2.455-.532,2.056-1.182-.4-.709-2.512-2.423-3.655-3.663-1.256-.177-1.884-.177-2,.532-.4,2.186-.457,7.8-4.8,13.176-3.883,4.786-8.68,5.318-14.732,5.022s-7.823-2.009-11.991-6.263a14.548,14.548,0,0,1-3.769-11.817c.228-2.186-2.57-.886-2.57-.886s-3.826,3.368-4.854,4.372c-1.085,1,.171,2.186,1.2,1.418s1.542-.65,2.741-1.832c1.485-1.418,1.313.118,1.313.118a16.789,16.789,0,0,0,6.338,12.644c3.826,2.9,9.764,4.55,19.415,3.427a8.634,8.634,0,0,0,8.108,6.027c2.8.177,6.8.059,9.422-3.368,6.167-8.331-4.283-15.3-4.4-15.185" transform="translate(-205.897 -102.185)"/>
+      </g>
+    </g>
+    <text id="recipe" class="cls-4" transform="translate(1593 648.126)"><tspan x="-43.731" y="0">recipe</tspan></text>
+  </g>
+</svg>

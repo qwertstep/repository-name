@@ -14,10 +14,10 @@ body {
 }
 #conts {
 	.container_bg_alpha {
-		@include bgColor(rgba(80, 218, 219, 0.5));
+		@include bgColor(rgba(245, 120, 122, 0.5));
 		
 		h2 {
-			@include bgImage(logo_ttl_02, svg, contain);
+			@include bgImage(logo_ttl_03, svg, contain);
 		}
 	}
 }

@@ -6,10 +6,10 @@ body {
   background-attachment: fixed; }
 
 #conts .container_bg_alpha {
-  background-color: rgba(80, 218, 219, 0.5) !important;
+  background-color: rgba(245, 120, 122, 0.5) !important;
   max-width: 100vw; }
   #conts .container_bg_alpha h2 {
-    background: url("../images/logo_ttl_02.svg") center no-repeat;
+    background: url("../images/logo_ttl_03.svg") center no-repeat;
     background-size: contain; }
 
 /* CSS Media Query: On screens that are 991px or less */
