@@ -31,6 +31,23 @@
 	font-family:"Cupcakia";
 	letter-spacing: .1rem;
 }
+/* big images on hover */
+.imgWrap {
+	display: block;
+	overflow: hidden;
+	background: black;
+
+	img {
+		display: block;
+		transition-duration: 0.3s;
+		
+		&:hover {
+			transform: scale(1.1);
+			transition-duration: 0.3s;
+			opacity: 0.6;
+		}
+	}
+}
 /* Designate font-sizes */
 @mixin fSize($fSize: 1, $Unit: rem) {
 	font-size: $fSize + $Unit;
@@ -176,7 +193,6 @@ body {
 		
 		&:hover {
 			text-decoration: none;
-			opacity: .825;
 		}
 		.card-body {
 			top: -2rem;
