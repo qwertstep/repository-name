@@ -1,5 +1,9 @@
 /* Scss Document */
 /* Common CSS */
+.wip {
+  background: black;
+  opacity: 1; }
+
 body .gradient, #conts {
   width: 100vw;
   height: auto;
@@ -30,7 +34,8 @@ body .gradient, #conts {
 .imgWrap {
   display: block;
   overflow: hidden;
-  background: black; }
+  background: black;
+  border-radius: .25rem; }
   .imgWrap img {
     display: block;
     transition-duration: 0.3s; }
@@ -38,6 +43,21 @@ body .gradient, #conts {
       transform: scale(1.1);
       transition-duration: 0.3s;
       opacity: 0.6; }
+  .imgWrap .imgEff {
+    display: block;
+    position: relative;
+    transition-duration: 0.3s;
+    border-radius: .25rem; }
+    .imgWrap .imgEff:hover {
+      transform: scale(1.1); }
+    .imgWrap .imgEff:before {
+      content: "";
+      position: absolute;
+      background: radial-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
+      transition-duration: 0.3s;
+      opacity: 0; }
+    .imgWrap .imgEff:hover:before {
+      opacity: 1; }
 
 /* Designate font-sizes */
 .fSize_8 {

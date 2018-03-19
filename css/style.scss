@@ -1,5 +1,9 @@
 /* Scss Document */
 /* Common CSS */
+.wip {
+	background: black;
+	opacity: 1;
+}
 @mixin responsive($margin: 1rem auto 0) {
 	margin: $margin;
 }
@@ -36,6 +40,7 @@
 	display: block;
 	overflow: hidden;
 	background: black;
+	border-radius: .25rem;
 
 	img {
 		display: block;
@@ -45,6 +50,26 @@
 			transform: scale(1.1);
 			transition-duration: 0.3s;
 			opacity: 0.6;
+		}
+	}
+	.imgEff {
+		display: block;
+		position: relative;
+		transition-duration: 0.3s;
+		border-radius: .25rem;
+		
+		&:hover {
+			transform: scale(1.1);
+		}
+		&:before {
+			content: "";
+			position: absolute;
+			background: radial-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .8));
+			transition-duration: 0.3s;
+			opacity: 0;
+		}
+		&:hover:before {
+			opacity: 1;
 		}
 	}
 }
