@@ -1,4 +1,5 @@
 /* Scss Document */
+/* Common CSS */
 body .gradient, #conts {
   width: 100vw;
   height: auto;
@@ -69,7 +70,8 @@ body {
     #gNav .navbar-toggler:focus {
       outline: none; }
   #gNav .card {
-    width: 18rem; }
+    width: 18rem;
+    margin-left: 1rem; }
   #gNav #NavbarWrap {
     z-index: 2; }
     #gNav #NavbarWrap .subscribe_btn {
@@ -202,6 +204,10 @@ body {
     background-size: cover;
     -webkit-background-size: cover;
     /* Android4 */ }
+
+  #gNav .card {
+    width: 18rem;
+    margin-left: 1rem; }
 
   #conts .row {
     margin-left: 0;
