@@ -239,7 +239,7 @@ body {
 
   #gNav .card {
     width: 18rem;
-    margin-left: 1rem; }
+    margin-left: 0; }
 
   #conts .row {
     margin-left: 0;
