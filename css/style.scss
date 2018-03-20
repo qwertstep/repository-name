@@ -112,6 +112,9 @@ body {
 	background-attachment: fixed;
 	font-weight: 100;
 	
+	> .row {
+		margin: 0;
+	}
 	.gradient {
 		@extend %full_screen;
 		position: fixed;
@@ -127,9 +130,6 @@ body {
 				-webkit-filter: hue-rotate(360deg);
 				filter: hue-rotate(360deg);
 			}
-		}
-		> .row {
-			margin: 0;
 		}
 	}
 }

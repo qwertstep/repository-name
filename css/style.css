@@ -80,6 +80,8 @@ body {
   background-size: cover;
   background-attachment: fixed;
   font-weight: 100; }
+  body > .row {
+    margin: 0; }
   body .gradient {
     position: fixed;
     background: linear-gradient(to left, rgba(166, 217, 0, 0.4) 0%, rgba(255, 68, 84, 0.4) 100%);
@@ -91,9 +93,6 @@ body {
   100% {
     -webkit-filter: hue-rotate(360deg);
     filter: hue-rotate(360deg); } }
-    body .gradient > .row {
-      margin: 0; }
-
 #gNav {
   position: fixed;
   top: 0;
