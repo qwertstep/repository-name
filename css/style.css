@@ -80,8 +80,6 @@ body {
   background-size: cover;
   background-attachment: fixed;
   font-weight: 100; }
-  body > .row {
-    margin: 0; }
   body .gradient {
     position: fixed;
     background: linear-gradient(to left, rgba(166, 217, 0, 0.4) 0%, rgba(255, 68, 84, 0.4) 100%);
@@ -239,21 +237,21 @@ body {
     -webkit-background-size: cover;
     /* Android4 */ }
 
+  .row {
+    margin: 0; }
+
   #gNav .card {
     width: 18rem;
     margin-left: 0; }
 
-  #conts .row {
-    margin-left: 0;
-    margin-right: 0; }
-    #conts .row .container {
-      padding-left: 0;
-      padding-right: 0; }
-    #conts .row a.col-md-3 {
-      -webkit-box-flex: 0;
-      -ms-flex: 0 0 100%;
-      flex: 0 0 100%;
-      max-width: 100%;
-      min-height: 0;
-      padding-left: 0;
-      padding-right: 0; } }
+  #conts .container {
+    padding-left: 0;
+    padding-right: 0; }
+  #conts a.col-md-3 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    min-height: 0;
+    padding-left: 0;
+    padding-right: 0; } }

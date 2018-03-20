@@ -112,9 +112,6 @@ body {
 	background-attachment: fixed;
 	font-weight: 100;
 	
-	> .row {
-		margin: 0;
-	}
 	.gradient {
 		@extend %full_screen;
 		position: fixed;
@@ -302,6 +299,9 @@ body {
 		@include bgImage(bg_conts_01, jpg);
 		-webkit-background-size: cover; /* Android4 */
 	}
+	.row {
+		margin: 0;
+	}
 	#gNav {
 		.card {
 			width: 18rem;
@@ -309,27 +309,22 @@ body {
 		}
 	}
 	#conts {
-		.row {
-			margin: {
+
+		.container {
+			padding: {
 				left: 0;
 				right: 0;
 			}
-			.container {
-				padding: {
-					left: 0;
-					right: 0;
-				}
-			}
-			a.col-md-3 {
-				-webkit-box-flex: 0;
-				-ms-flex: 0 0 100%;
-				flex: 0 0 100%;
-				max-width: 100%;
-				min-height: 0;
-				padding: {
-					left: 0;
-					right: 0;
-				}
+		}
+		a.col-md-3 {
+			-webkit-box-flex: 0;
+			-ms-flex: 0 0 100%;
+			flex: 0 0 100%;
+			max-width: 100%;
+			min-height: 0;
+			padding: {
+				left: 0;
+				right: 0;
 			}
 		}
 	}
