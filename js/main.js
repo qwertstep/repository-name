@@ -14,13 +14,16 @@ $(function(){
 // window.addEventListener('load', function() {});
 window.onload = function(){
    'use strict';
-	var timer = false;
-	changeSize();
 	$('body').delay(0).fadeIn(2000);
 	
-	$(window).resize(function(){ changeSize(); });
+	//Judge a width of window size when page was loaded
+	reassemble();
 	
-	function changeSize(){
+	//Judge a width of window size when page was resize
+	$(window).resize(function(){ reassemble(); });
+	
+	var timer = false;
+	function reassemble(){
 		if (timer !== false) {
 			clearTimeout(timer);
 		}
@@ -36,5 +39,26 @@ window.onload = function(){
 			}
 		}, 10);
 	}
+	
+	//scroll to top
+	$(function() {
+		var topBtn = $('#page-top');    
+		topBtn.hide();
+		//display a buton when scroll reached 500
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 500) {
+				topBtn.fadeIn();
+			} else {
+				topBtn.fadeOut();
+			}
+		});
+		//scroll stop
+		topBtn.click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 500);
+			return false;
+		});
+	});
 };
 	

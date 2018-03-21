@@ -231,6 +231,29 @@ body {
 			}
 		}
 	}
+	/* scroll to top */
+	#page-top {
+		position: fixed;
+		bottom: 60px;
+		right: 20px;
+		font-size: 80%;
+		
+		a {
+			background: rgba(0, 0, 0, .3);
+			text-decoration: none;
+			color: #fff;
+			width: 100px;
+			padding: 25px 0;
+			text-align: center;
+			display: block;
+			border-radius: 10px;
+			
+			&:hover {
+				text-decoration: none;
+				background: rgba(0, 0, 0, .6);
+			}
+		}
+	}
 }
 /*  CSS Media Query: On screens that are 1199px or less */
 @media (max-width: 1199px) {
