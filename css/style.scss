@@ -250,7 +250,7 @@ body {
 			padding-bottom: 0;
 		}
 		.navbar-toggler {
-			@include responsive(0 0 .5rem 1.2rem);
+			@include responsive(0 0 .5rem 0);
 		}
 		.card {
 			width: 100%!important;
