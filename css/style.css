@@ -247,6 +247,8 @@ body {
   #conts .container {
     padding-left: 0;
     padding-right: 0; }
+    #conts .container .m_wrap {
+      margin: 0 2rem; }
   #conts a.col-md-3 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 100%;

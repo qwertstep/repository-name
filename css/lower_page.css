@@ -1,7 +1,7 @@
 /* Scss Document */
 /* Lower Page CSS */
 body .gradient {
-  background: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.3) 100%); }
+  background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.3) 100%); }
 
 #conts h1 {
   background: none; }
@@ -23,8 +23,6 @@ body .gradient {
       width: 100%;
       padding-top: 0;
       padding-bottom: 0; }
-    #conts .container h3, #conts .container p, #conts .container .m_wrap, #conts .container footer {
-      margin: 0 2rem; }
   #conts .container_bg {
     padding-top: 0;
     padding-bottom: 2rem; }
