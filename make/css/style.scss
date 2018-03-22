@@ -15,7 +15,7 @@ body {
 #conts {
 	.container_bg_alpha {
 		@include bgColor(rgba(245, 120, 122, 0.5));
-		
+
 		h2 {
 			@include bgImage(logo_ttl_03, svg, contain);
 		}
@@ -23,10 +23,10 @@ body {
 }
 /* CSS Media Query: On screens that are 991px or less */
 @media (max-width: 991px) {
-	
+
 	body::before {
 		@include bgImage(bg_conts_01, jpg);
-	}	
+	}
 }
 
 
