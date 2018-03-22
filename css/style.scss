@@ -5,7 +5,7 @@
 	opacity: 1;
 }
 .conts_align_c {
-	padding-left: 10rem!important;
+	margin-left: 10rem!important;
 }
 @mixin responsive($margin: 1rem auto 0) {
 	margin: $margin;
@@ -218,7 +218,7 @@ body {
 		@include subscribeBtn( .75, .9);
 
 	}
-	a.col-md-3 {
+	a.col-md-4 {
 	    transition: opacity .3s linear;
 
 		&:hover {
@@ -229,7 +229,7 @@ body {
 		}
 	}
 	@for $i from 1 through 3 {
-		a.col-md-3 {
+		a.col-md-4 {
 			&:nth-child(#{$i}) .card-title {
 				@include bgImage(bg_ttl_0#{$i}, png);
 				padding: .6rem .5rem .3rem .6rem;
@@ -344,7 +344,7 @@ body {
 				margin: 0 2rem;
 			}
 		}
-		a.col-md-3 {
+		a.col-md-4 {
 			-webkit-box-flex: 0;
 			-ms-flex: 0 0 100%;
 			flex: 0 0 100%;
