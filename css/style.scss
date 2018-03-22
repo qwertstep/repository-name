@@ -207,7 +207,6 @@ body {
 }
 #conts {
 	@extend %full_screen;
-	margin: 0 0 0 7.3rem;
 
 	h1 {
 		@include bgImage(logo_ttl_01, svg, contain);
