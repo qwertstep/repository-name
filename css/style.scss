@@ -4,6 +4,9 @@
 	background: black;
 	opacity: 1;
 }
+.conts_align_c {
+	padding: 10rem;
+}
 @mixin responsive($margin: 1rem auto 0) {
 	margin: $margin;
 }
