@@ -80,6 +80,8 @@ body {
   background-size: cover;
   background-attachment: fixed;
   font-weight: 100; }
+  body .row {
+    margin: 0; }
   body .gradient {
     position: fixed;
     background: linear-gradient(to left, rgba(166, 217, 0, 0.4) 0%, rgba(255, 68, 84, 0.4) 100%);
@@ -254,9 +256,6 @@ body {
     background-size: cover;
     -webkit-background-size: cover;
     /* Android4 */ }
-
-  .row {
-    margin: 0; }
 
   #gNav .card {
     width: 18rem;
