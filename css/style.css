@@ -204,6 +204,9 @@ body {
 
 /*  CSS Media Query: On screens that are 1199px or less */
 @media (max-width: 1199px) {
+  .conts_align_c {
+    margin-left: 0 !important; }
+
   #gNav, #gNav #Navbar_bottom, #conts {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 100%;
