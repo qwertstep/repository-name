@@ -337,9 +337,6 @@ body {
 		}
 	}
 	#conts {
-		.first_view {
-			height: 100vw;
-		}
 		.container {
 			padding: {
 				left: 0;
@@ -362,6 +359,12 @@ body {
 		}
 	}
 }
-
-
+/* CSS Media Query: On screens that are 541px or less */
+@media (max-width: 541px) {
+	#conts {
+		.first_view {
+			height: 100vw;
+		}
+	}
+}
 

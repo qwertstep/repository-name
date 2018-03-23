@@ -266,8 +266,6 @@ body {
     width: 18rem;
     margin-left: 0; }
 
-  #conts .first_view {
-    height: 100vw; }
   #conts .container {
     padding-left: 0;
     padding-right: 0; }
@@ -281,3 +279,7 @@ body {
     min-height: 0;
     padding-left: 0;
     padding-right: 0; } }
+/* CSS Media Query: On screens that are 541px or less */
+@media (max-width: 541px) {
+  #conts .first_view {
+    height: 100vw; } }
